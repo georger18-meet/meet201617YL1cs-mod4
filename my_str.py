@@ -1,5 +1,5 @@
 #FIX THE LINE BELOW
-class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
+class MyStr(str): #<-----Replace xyz-make a new class, MyStr, that inherits from str
     """
     Build a subclass of str with some new, fun methods.
     """
@@ -9,7 +9,7 @@ class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
         """
         Add num exclamation points to string.
         (We did this example in class.)
-
+ 
         :param num: number of exclamation points to add
         :returns: a string with num exclamation points added to the end
         """
@@ -41,7 +41,7 @@ class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
         #Hints:
         # 1. Remember that self is a MyStr object,
         #    and a MyStr object is also a str.
-        #    However, remember that to call the replace
+        #    However, remembery that to call the replace
         #    method of str, you may need to use super
         # 2. The following str methods will be helpful:
         #       replace, lower, and upper
@@ -49,4 +49,7 @@ class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
         #       do this in as little as 1 line.
         #YOUR CODE BELOW:
         #################
-        
+        lower_str=self.lower()
+        the_answer=lower_str.replace(take_out.lower(), use_this.lower())
+        return the_answer
+    
